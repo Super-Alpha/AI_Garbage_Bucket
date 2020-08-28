@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/code">
+
+    <LinearLayout
+        android:id="@+id/face"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="100dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/start_face"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="开始监测人脸" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="118dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:text="GPIOVAL:"
+            android:textColor="#be0e0a"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

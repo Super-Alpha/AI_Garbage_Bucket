@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.arcsoft.sdk_demo">
+
+    <!-- camera -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <!-- sdcard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许应用程序改变网络的状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 允许应用程序改变WIFI的连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 允许应用程序改变有关网络的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity android:name=".PermissionActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".DetecterActivity" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".MediaActivity"
+            android:launchMode="singleTop" />
+
+        <service
+            android:name=".AutoRegister_and_SaveVideo"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".GarbageClassification"
+            android:label="@string/title_activity_garbage_classification"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ManualRegisterActivity" />
+        <activity android:name=".ResultActivity"></activity>
+    </application>
+
+</manifest>

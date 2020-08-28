@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">智能分类箱</string>
+    <string name="title_activity_garbage_classification">GarbageClassification</string>
+</resources>
